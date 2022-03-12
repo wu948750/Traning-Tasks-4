@@ -1,0 +1,42 @@
+ <h2>User info</h2>
+
+      <% if user.profile_image.attached? %>
+        <%= image_tag user.profile_image, size: "63x63" %>
+      <% else %>
+        <%= image_tag 'no_image', size: "63x63" %>
+      <% end %>
+
+      <table class="table">
+        <tbody>
+          <tr>
+            <td>name</td>
+            <td><span><%= user.name %></span></td>
+          </tr>
+          <tr>
+            <td>introduction</td>
+            <td><span><%= user.introduction %></span></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="btn-wrapper mx-auto">
+        <%= link_to edit_user_path(user) do %>
+          <div class="row">
+            <button class="btn-block btn btn-secondary btn-sm my-3 w-100">
+              <i class="fas fa-user-cog", class: 'text-white'></i>
+            </button>
+          </div>
+        <% end %>
+      </div>
+
+      <h2>New book</h2>
+
+      <%= form_with model: Book.new , local: true do |f| %>
+        <h4>Title</h4>
+        <%= f.text_field :title,class: 'form-control', size: 15 %><br>
+
+        <h4>Opinion</h4>
+        <%= f.text_area :body, class: 'form-control', size: "15x2" %><br>
+
+        <%= f.submit 'Create Book', class: "btn btn-success" %>
+      <% end %>

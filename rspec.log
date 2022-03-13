@@ -2,7 +2,7 @@
 BookCommentモデルのテスト
   バリデーションのテスト
     commentカラム
-[31m      空欄でないこと (FAILED - 1)[0m
+[32m      空欄でないこと[0m
   アソシエーションのテスト
     Bookモデルとの関係
 [32m      N:1となっている[0m
@@ -27,7 +27,7 @@ Bookモデルのテスト
 
 Favoriteモデルのテスト
   バリデーションのテスト
-[31m    ユーザーは一つの投稿に一つしかいいねできない (FAILED - 2)[0m
+[32m    ユーザーは一つの投稿に一つしかいいねできない[0m
   アソシエーションのテスト
     Bookモデルとの関係
 [32m      N:1となっている[0m
@@ -50,7 +50,7 @@ Userモデルのテスト
     Bookモデルとの関係
 [32m      1:Nとなっている[0m
     BookCommentモデルとの関係
-[31m      1:Nとなっている (FAILED - 3)[0m
+[32m      1:Nとなっている[0m
     Favoriteモデルとの関係
 [32m      1:Nとなっている[0m
 
@@ -71,12 +71,12 @@ Userモデルのテスト
 [32m      Homeリンクが表示される: 左上から1番目のリンクが「Home」である[0m
 [32m      Aboutリンクが表示される: 左上から2番目のリンクが「About」である[0m
 [32m      sign upリンクが表示される: 左上から3番目のリンクが「sign up」である[0m
-[31m      loginリンクが表示される: 左上から4番目のリンクが「login」である (FAILED - 4)[0m
+[32m      loginリンクが表示される: 左上から4番目のリンクが「login」である[0m
     リンクの内容を確認
 [32m      Homeを押すと、トップ画面に遷移する[0m
 [32m      Aboutを押すと、アバウト画面に遷移する[0m
-[31m      sign upを押すと、新規登録画面に遷移する (FAILED - 5)[0m
-[31m      loginを押すと、ログイン画面に遷移する (FAILED - 6)[0m
+[32m      sign upを押すと、新規登録画面に遷移する[0m
+[32m      loginを押すと、ログイン画面に遷移する[0m
   ユーザ新規登録のテスト
     表示内容の確認
 [32m      URLが正しい[0m
@@ -107,7 +107,7 @@ Userモデルのテスト
 [32m      Homeリンクが表示される: 左上から1番目のリンクが「Home」である[0m
 [32m      Usersリンクが表示される: 左上から2番目のリンクが「Users」である[0m
 [32m      Booksリンクが表示される: 左上から3番目のリンクが「Books」である[0m
-[31m      log outリンクが表示される: 左上から4番目のリンクが「logout」である (FAILED - 7)[0m
+[32m      log outリンクが表示される: 左上から4番目のリンクが「logout」である[0m
   ユーザログアウトのテスト
     ログアウト機能のテスト
 [32m      正しくログアウトできている: ログアウト後のリダイレクト先においてAbout画面へのリンクが存在する[0m
@@ -333,284 +333,31 @@ Userモデルのテスト
 [32m      自分が投稿したコメントの削除ボタンが表示される[0m
 [32m      他人が投稿したコメントの削除ボタンは表示されない[0m
 [32m      コメント投稿フォームが表示される[0m
-[31m      送信ボタンが表示される (FAILED - 8)[0m
+[32m      送信ボタンが表示される[0m
     いいね機能のテスト
-[31m      自分のいいねが正しく保存される (FAILED - 9)[0m
+[32m      自分のいいねが正しく保存される[0m
 [32m      リダイレクト先が、いいねをした投稿詳細画面になっている[0m
 [32m      リダイレクト先でいいね数が正しく更新されている[0m
     コメント追加機能のテスト
-[31m      自分のコメントが正しく保存される (FAILED - 10)[0m
-[31m      リダイレクト先が、コメントをした投稿詳細画面になっている (FAILED - 11)[0m
-[31m      リダイレクト先でコメント数が正しく更新されている (FAILED - 12)[0m
-[31m      リダイレクト先で新しいコメントが表示されている (FAILED - 13)[0m
+[32m      自分のコメントが正しく保存される[0m
+[32m      リダイレクト先が、コメントをした投稿詳細画面になっている[0m
+[32m      リダイレクト先でコメント数が正しく更新されている[0m
+[32m      リダイレクト先で新しいコメントが表示されている[0m
     コメント削除機能のテスト
-[31m      自分のコメントが正しく削除される (FAILED - 14)[0m
+[32m      自分のコメントが正しく削除される[0m
 [32m      リダイレクト先が、コメントをしていた投稿詳細画面になっている[0m
 [32m      リダイレクト先でコメント数が正しく更新されている[0m
 [32m      リダイレクト先で削除したコメントは表示されない[0m
   自分のユーザ詳細画面のテスト[課題4追加分]
     表示の確認
-[31m      いいねボタンのハートアイコンが表示される (FAILED - 15)[0m
-[31m      いいねボタンが表示される (FAILED - 16)[0m
+[32m      いいねボタンのハートアイコンが表示される[0m
+[32m      いいねボタンが表示される[0m
 [32m      コメント数が表示される[0m
     いいね作成機能のテスト
-[31m      自分のいいねが正しく保存される (FAILED - 17)[0m
-[31m      リダイレクト先が自分のユーザ詳細画面になっている (FAILED - 18)[0m
-[31m      リダイレクト先でいいね数が正しく更新されている (FAILED - 19)[0m
+[32m      自分のいいねが正しく保存される[0m
+[32m      リダイレクト先が自分のユーザ詳細画面になっている[0m
+[32m      リダイレクト先でいいね数が正しく更新されている[0m
 
-Failures:
-
-  1) BookCommentモデルのテスト バリデーションのテスト commentカラム 空欄でないこと
-     [31mFailure/Error: [0mis_expected.to eq [1;36mfalse[0m[0m
-     [31m[0m
-     [31m  expected: false[0m
-     [31m       got: true[0m
-     [31m[0m
-     [31m  (compared using ==)[0m
-     [31m[0m
-     [31m  Diff:[0m[0m
-     [31m  [0m[34m@@ -1 +1 @@[0m
-     [31m  [0m[31m-false[0m
-     [31m  [0m[32m+true[0m
-     [31m  [0m[0m
-     [36m# ./spec/models/book_comment_spec.rb:14:in `block (4 levels) in <top (required)>'[0m
-
-  2) Favoriteモデルのテスト バリデーションのテスト ユーザーは一つの投稿に一つしかいいねできない
-     [31mFailure/Error: [0mis_expected.to eq [1;36mfalse[0m[0m
-     [31m[0m
-     [31m  expected: false[0m
-     [31m       got: true[0m
-     [31m[0m
-     [31m  (compared using ==)[0m
-     [31m[0m
-     [31m  Diff:[0m[0m
-     [31m  [0m[34m@@ -1 +1 @@[0m
-     [31m  [0m[31m-false[0m
-     [31m  [0m[32m+true[0m
-     [31m  [0m[0m
-     [36m# ./spec/models/favorite_spec.rb:13:in `block (3 levels) in <main>'[0m
-
-  3) Userモデルのテスト アソシエーションのテスト BookCommentモデルとの関係 1:Nとなっている
-     [31mFailure/Error: [0m[32mexpect[0m([1;34;4mUser[0m.reflect_on_association([33m:book_comments[0m).macro).to eq [33m:has_many[0m[0m
-     [31m[0m
-     [31mNoMethodError:[0m
-     [31m  undefined method `macro' for nil:NilClass[0m
-     [36m# ./spec/models/user_spec.rb:57:in `block (4 levels) in <main>'[0m
-
-  4) [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしていない場合 表示内容の確認 loginリンクが表示される: 左上から4番目のリンクが「login」である
-     [31mFailure/Error: [0m[32mexpect[0m(login_link).to match([35m[1;35m/[0m[35mlogin[1;35m/[0m[35m[35mi[0m[35m[0m)[0m
-     [31m[0m
-     [31m  expected "\n                Log in\n" to match /login/i[0m
-     [31m  Diff:[0m[0m
-     [31m  [0m[34m@@ -1,2 +1,3 @@[0m
-     [31m  [0m[31m-/login/i[0m
-     [31m  [0m[32m+[0m
-     [31m  [0m[32m+                Log in[0m
-     [31m  [0m[0m
-     [36m# ./spec/system/01_before_login_spec.rb:67:in `block (4 levels) in <main>'[0m
-
-  5) [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしていない場合 リンクの内容を確認 sign upを押すと、新規登録画面に遷移する
-     [31mFailure/Error: [0mclick_link signup_link[0m
-     [31m[0m
-     [31mCapybara::Ambiguous:[0m
-     [31m  Ambiguous match, found 2 elements matching visible link "Sign up"[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/node/finders.rb:301:in `block in synced_resolve'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/node/base.rb:83:in `synchronize'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/node/finders.rb:292:in `synced_resolve'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/node/finders.rb:53:in `find'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/node/actions.rb:42:in `click_link'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/session.rb:778:in `block (2 levels) in <class:Session>'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
-     [36m# ./spec/system/01_before_login_spec.rb:90:in `block (4 levels) in <main>'[0m
-
-  6) [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしていない場合 リンクの内容を確認 loginを押すと、ログイン画面に遷移する
-     [31mFailure/Error: [0mclick_link login_link[0m
-     [31m[0m
-     [31mCapybara::Ambiguous:[0m
-     [31m  Ambiguous match, found 2 elements matching visible link "Log in"[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/node/finders.rb:301:in `block in synced_resolve'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/node/base.rb:83:in `synchronize'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/node/finders.rb:292:in `synced_resolve'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/node/finders.rb:53:in `find'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/node/actions.rb:42:in `click_link'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/session.rb:778:in `block (2 levels) in <class:Session>'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
-     [36m# ./spec/system/01_before_login_spec.rb:96:in `block (4 levels) in <main>'[0m
-
-  7) [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしている場合 ヘッダーの表示を確認 log outリンクが表示される: 左上から4番目のリンクが「logout」である
-     [31mFailure/Error: [0m[32mexpect[0m(logout_link).to match([35m[1;35m/[0m[35mlogout[1;35m/[0m[35m[35mi[0m[35m[0m)[0m
-     [31m[0m
-     [31m  expected "\n                Log out\n" to match /logout/i[0m
-     [31m  Diff:[0m[0m
-     [31m  [0m[34m@@ -1,2 +1,3 @@[0m
-     [31m  [0m[31m-/logout/i[0m
-     [31m  [0m[32m+[0m
-     [31m  [0m[32m+                Log out[0m
-     [31m  [0m[0m
-     [36m# ./spec/system/01_before_login_spec.rb:230:in `block (4 levels) in <main>'[0m
-
-  8) [STEP4] いいねとコメントのテスト 自分の投稿詳細画面のテスト[課題4追加分] 表示の確認 送信ボタンが表示される
-     [31mFailure/Error: [0m[32mexpect[0m(page).to have_button [31m[1;31m'[0m[31m送信[1;31m'[0m[31m[0m[0m
-     [31m  expected to find button "送信" that is not disabled but there were no matches[0m
-     [36m# ./spec/system/04_favorite_comment_spec.rb:99:in `block (4 levels) in <main>'[0m
-
-  9) [STEP4] いいねとコメントのテスト 自分の投稿詳細画面のテスト[課題4追加分] いいね機能のテスト 自分のいいねが正しく保存される
-     [31mFailure/Error: [0mlet!([33m:other_user[0m) { create([33m:user[0m) }[0m
-     [31m[0m
-     [31mActiveRecord::StatementInvalid:[0m
-     [31m  SQLite3::BusyException: database is locked[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sqlite3-1.4.2/lib/sqlite3/statement.rb:108:in `step'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sqlite3-1.4.2/lib/sqlite3/statement.rb:108:in `block in each'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sqlite3-1.4.2/lib/sqlite3/statement.rb:107:in `loop'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sqlite3-1.4.2/lib/sqlite3/statement.rb:107:in `each'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/factory_bot-6.2.0/lib/factory_bot/evaluation.rb:18:in `create'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/factory_bot-6.2.0/lib/factory_bot/strategy/create.rb:12:in `block in result'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/factory_bot-6.2.0/lib/factory_bot/strategy/create.rb:9:in `tap'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/factory_bot-6.2.0/lib/factory_bot/strategy/create.rb:9:in `result'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/factory_bot-6.2.0/lib/factory_bot/factory.rb:43:in `run'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/factory_bot-6.2.0/lib/factory_bot/factory_runner.rb:29:in `block in run'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/factory_bot-6.2.0/lib/factory_bot/factory_runner.rb:28:in `run'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/factory_bot-6.2.0/lib/factory_bot/strategy_syntax_method_registrar.rb:28:in `block in define_singular_strategy_method'[0m
-     [36m# ./spec/system/04_favorite_comment_spec.rb:5:in `block (2 levels) in <main>'[0m
-     [36m# ------------------[0m
-     [36m# --- Caused by: ---[0m
-     [36m# SQLite3::BusyException:[0m
-     [36m#   database is locked[0m
-     [36m#   /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/sqlite3-1.4.2/lib/sqlite3/statement.rb:108:in `step'[0m
-
-  10) [STEP4] いいねとコメントのテスト 自分の投稿詳細画面のテスト[課題4追加分] コメント追加機能のテスト 自分のコメントが正しく保存される
-      [31mFailure/Error: [0m[32mexpect[0m { click_button [31m[1;31m'[0m[31m送信[1;31m'[0m[31m[0m }.to change(user.book_comments, [33m:count[0m).by([1;34m1[0m)[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `book_comments' for #<User:0x0000000009953dd8>[0m
-      [31m  Did you mean?  book_ids[0m
-      [36m# ./spec/system/04_favorite_comment_spec.rb:121:in `block (4 levels) in <main>'[0m
-
-  11) [STEP4] いいねとコメントのテスト 自分の投稿詳細画面のテスト[課題4追加分] コメント追加機能のテスト リダイレクト先が、コメントをした投稿詳細画面になっている
-      [31mFailure/Error: [0mclick_button [31m[1;31m'[0m[31m送信[1;31m'[0m[31m[0m[0m
-      [31m[0m
-      [31mCapybara::ElementNotFound:[0m
-      [31m  Unable to find button "送信" that is not disabled[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/node/finders.rb:303:in `block in synced_resolve'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/node/base.rb:83:in `synchronize'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/node/finders.rb:292:in `synced_resolve'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/node/finders.rb:53:in `find'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/node/actions.rb:58:in `click_button'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/session.rb:778:in `block (2 levels) in <class:Session>'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
-      [36m# ./spec/system/04_favorite_comment_spec.rb:124:in `block (4 levels) in <main>'[0m
-
-  12) [STEP4] いいねとコメントのテスト 自分の投稿詳細画面のテスト[課題4追加分] コメント追加機能のテスト リダイレクト先でコメント数が正しく更新されている
-      [31mFailure/Error: [0mclick_button [31m[1;31m'[0m[31m送信[1;31m'[0m[31m[0m[0m
-      [31m[0m
-      [31mCapybara::ElementNotFound:[0m
-      [31m  Unable to find button "送信" that is not disabled[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/node/finders.rb:303:in `block in synced_resolve'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/node/base.rb:83:in `synchronize'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/node/finders.rb:292:in `synced_resolve'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/node/finders.rb:53:in `find'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/node/actions.rb:58:in `click_button'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/session.rb:778:in `block (2 levels) in <class:Session>'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
-      [36m# ./spec/system/04_favorite_comment_spec.rb:128:in `block (4 levels) in <main>'[0m
-
-  13) [STEP4] いいねとコメントのテスト 自分の投稿詳細画面のテスト[課題4追加分] コメント追加機能のテスト リダイレクト先で新しいコメントが表示されている
-      [31mFailure/Error: [0mclick_button [31m[1;31m'[0m[31m送信[1;31m'[0m[31m[0m[0m
-      [31m[0m
-      [31mCapybara::ElementNotFound:[0m
-      [31m  Unable to find button "送信" that is not disabled[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/node/finders.rb:303:in `block in synced_resolve'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/node/base.rb:83:in `synchronize'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/node/finders.rb:292:in `synced_resolve'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/node/finders.rb:53:in `find'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/node/actions.rb:58:in `click_button'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/session.rb:778:in `block (2 levels) in <class:Session>'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
-      [36m# ./spec/system/04_favorite_comment_spec.rb:132:in `block (4 levels) in <main>'[0m
-
-  14) [STEP4] いいねとコメントのテスト 自分の投稿詳細画面のテスト[課題4追加分] コメント削除機能のテスト 自分のコメントが正しく削除される
-      [31mFailure/Error: [0m[32mexpect[0m { click_link [31m[1;31m'[0m[31mDestroy[1;31m'[0m[31m[0m, [35mhref[0m: @destroy_link }.to change(user.book_comments, [33m:count[0m).by([1;34m-1[0m)[0m
-      [31m[0m
-      [31mNoMethodError:[0m
-      [31m  undefined method `book_comments' for #<User:0x0000000008cf9380>[0m
-      [31m  Did you mean?  book_ids[0m
-      [36m# ./spec/system/04_favorite_comment_spec.rb:143:in `block (4 levels) in <main>'[0m
-
-  15) [STEP4] いいねとコメントのテスト 自分のユーザ詳細画面のテスト[課題4追加分] 表示の確認 いいねボタンのハートアイコンが表示される
-      [31mFailure/Error: [0m[32mexpect[0m(page).to have_selector([31m[1;31m'[0m[31m.fa-heart[1;31m'[0m[31m[0m)[0m
-      [31m  expected to find css ".fa-heart" but there were no matches[0m
-      [36m# ./spec/system/04_favorite_comment_spec.rb:166:in `block (4 levels) in <main>'[0m
-
-  16) [STEP4] いいねとコメントのテスト 自分のユーザ詳細画面のテスト[課題4追加分] 表示の確認 いいねボタンが表示される
-      [31mFailure/Error: [0m[32mexpect[0m(page).to have_link [31m[1;31m'[0m[31m[1;31m'[0m[31m[0m, [35mhref[0m: book_favorites_path(book)[0m
-      [31m  expected to find link "" with href "/books/1/favorites" but there were no matches[0m
-      [36m# ./spec/system/04_favorite_comment_spec.rb:169:in `block (4 levels) in <main>'[0m
-
-  17) [STEP4] いいねとコメントのテスト 自分のユーザ詳細画面のテスト[課題4追加分] いいね作成機能のテスト 自分のいいねが正しく保存される
-      [31mFailure/Error: [0m[32mexpect[0m { click_link [31m[1;31m'[0m[31m[1;31m'[0m[31m[0m, [35mhref[0m: book_favorites_path(book) }.to change(user.favorites, [33m:count[0m).by([1;34m1[0m)[0m
-      [31m[0m
-      [31mCapybara::ElementNotFound:[0m
-      [31m  Unable to find link "" with href "/books/1/favorites"[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/node/finders.rb:303:in `block in synced_resolve'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/node/base.rb:83:in `synchronize'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/node/finders.rb:292:in `synced_resolve'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/node/finders.rb:53:in `find'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/node/actions.rb:42:in `click_link'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/session.rb:778:in `block (2 levels) in <class:Session>'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
-      [36m# ./spec/system/04_favorite_comment_spec.rb:177:in `block (5 levels) in <main>'[0m
-      [36m# ./spec/system/04_favorite_comment_spec.rb:177:in `block (4 levels) in <main>'[0m
-
-  18) [STEP4] いいねとコメントのテスト 自分のユーザ詳細画面のテスト[課題4追加分] いいね作成機能のテスト リダイレクト先が自分のユーザ詳細画面になっている
-      [31mFailure/Error: [0mclick_link [31m[1;31m'[0m[31m[1;31m'[0m[31m[0m, [35mhref[0m: book_favorites_path(book)[0m
-      [31m[0m
-      [31mCapybara::ElementNotFound:[0m
-      [31m  Unable to find link "" with href "/books/1/favorites"[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/node/finders.rb:303:in `block in synced_resolve'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/node/base.rb:83:in `synchronize'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/node/finders.rb:292:in `synced_resolve'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/node/finders.rb:53:in `find'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/node/actions.rb:42:in `click_link'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/session.rb:778:in `block (2 levels) in <class:Session>'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
-      [36m# ./spec/system/04_favorite_comment_spec.rb:180:in `block (4 levels) in <main>'[0m
-
-  19) [STEP4] いいねとコメントのテスト 自分のユーザ詳細画面のテスト[課題4追加分] いいね作成機能のテスト リダイレクト先でいいね数が正しく更新されている
-      [31mFailure/Error: [0mclick_link [31m[1;31m'[0m[31m[1;31m'[0m[31m[0m, [35mhref[0m: book_favorites_path(book)[0m
-      [31m[0m
-      [31mCapybara::ElementNotFound:[0m
-      [31m  Unable to find link "" with href "/books/1/favorites"[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/node/finders.rb:303:in `block in synced_resolve'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/node/base.rb:83:in `synchronize'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/node/finders.rb:292:in `synced_resolve'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/node/finders.rb:53:in `find'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/node/actions.rb:42:in `click_link'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/session.rb:778:in `block (2 levels) in <class:Session>'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
-      [36m# ./spec/system/04_favorite_comment_spec.rb:184:in `block (4 levels) in <main>'[0m
-
-Finished in 44.6 seconds (files took 1.05 seconds to load)
-[31m243 examples, 19 failures[0m
-
-Failed examples:
-
-[31mrspec ./spec/models/book_comment_spec.rb:12[0m [36m# BookCommentモデルのテスト バリデーションのテスト commentカラム 空欄でないこと[0m
-[31mrspec ./spec/models/favorite_spec.rb:12[0m [36m# Favoriteモデルのテスト バリデーションのテスト ユーザーは一つの投稿に一つしかいいねできない[0m
-[31mrspec ./spec/models/user_spec.rb:56[0m [36m# Userモデルのテスト アソシエーションのテスト BookCommentモデルとの関係 1:Nとなっている[0m
-[31mrspec ./spec/system/01_before_login_spec.rb:65[0m [36m# [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしていない場合 表示内容の確認 loginリンクが表示される: 左上から4番目のリンクが「login」である[0m
-[31mrspec ./spec/system/01_before_login_spec.rb:87[0m [36m# [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしていない場合 リンクの内容を確認 sign upを押すと、新規登録画面に遷移する[0m
-[31mrspec ./spec/system/01_before_login_spec.rb:93[0m [36m# [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしていない場合 リンクの内容を確認 loginを押すと、ログイン画面に遷移する[0m
-[31mrspec ./spec/system/01_before_login_spec.rb:228[0m [36m# [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしている場合 ヘッダーの表示を確認 log outリンクが表示される: 左上から4番目のリンクが「logout」である[0m
-[31mrspec ./spec/system/04_favorite_comment_spec.rb:98[0m [36m# [STEP4] いいねとコメントのテスト 自分の投稿詳細画面のテスト[課題4追加分] 表示の確認 送信ボタンが表示される[0m
-[31mrspec ./spec/system/04_favorite_comment_spec.rb:103[0m [36m# [STEP4] いいねとコメントのテスト 自分の投稿詳細画面のテスト[課題4追加分] いいね機能のテスト 自分のいいねが正しく保存される[0m
-[31mrspec ./spec/system/04_favorite_comment_spec.rb:120[0m [36m# [STEP4] いいねとコメントのテスト 自分の投稿詳細画面のテスト[課題4追加分] コメント追加機能のテスト 自分のコメントが正しく保存される[0m
-[31mrspec ./spec/system/04_favorite_comment_spec.rb:123[0m [36m# [STEP4] いいねとコメントのテスト 自分の投稿詳細画面のテスト[課題4追加分] コメント追加機能のテスト リダイレクト先が、コメントをした投稿詳細画面になっている[0m
-[31mrspec ./spec/system/04_favorite_comment_spec.rb:127[0m [36m# [STEP4] いいねとコメントのテスト 自分の投稿詳細画面のテスト[課題4追加分] コメント追加機能のテスト リダイレクト先でコメント数が正しく更新されている[0m
-[31mrspec ./spec/system/04_favorite_comment_spec.rb:131[0m [36m# [STEP4] いいねとコメントのテスト 自分の投稿詳細画面のテスト[課題4追加分] コメント追加機能のテスト リダイレクト先で新しいコメントが表示されている[0m
-[31mrspec ./spec/system/04_favorite_comment_spec.rb:142[0m [36m# [STEP4] いいねとコメントのテスト 自分の投稿詳細画面のテスト[課題4追加分] コメント削除機能のテスト 自分のコメントが正しく削除される[0m
-[31mrspec ./spec/system/04_favorite_comment_spec.rb:165[0m [36m# [STEP4] いいねとコメントのテスト 自分のユーザ詳細画面のテスト[課題4追加分] 表示の確認 いいねボタンのハートアイコンが表示される[0m
-[31mrspec ./spec/system/04_favorite_comment_spec.rb:168[0m [36m# [STEP4] いいねとコメントのテスト 自分のユーザ詳細画面のテスト[課題4追加分] 表示の確認 いいねボタンが表示される[0m
-[31mrspec ./spec/system/04_favorite_comment_spec.rb:176[0m [36m# [STEP4] いいねとコメントのテスト 自分のユーザ詳細画面のテスト[課題4追加分] いいね作成機能のテスト 自分のいいねが正しく保存される[0m
-[31mrspec ./spec/system/04_favorite_comment_spec.rb:179[0m [36m# [STEP4] いいねとコメントのテスト 自分のユーザ詳細画面のテスト[課題4追加分] いいね作成機能のテスト リダイレクト先が自分のユーザ詳細画面になっている[0m
-[31mrspec ./spec/system/04_favorite_comment_spec.rb:183[0m [36m# [STEP4] いいねとコメントのテスト 自分のユーザ詳細画面のテスト[課題4追加分] いいね作成機能のテスト リダイレクト先でいいね数が正しく更新されている[0m
+Finished in 48.92 seconds (files took 1.02 seconds to load)
+[32m243 examples, 0 failures[0m
 
